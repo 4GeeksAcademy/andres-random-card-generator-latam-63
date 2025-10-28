@@ -27,6 +27,7 @@ window.onload = function () {
   }
 };
 document.getElementById('button').addEventListener('click', function () {
+
   let suits = ["&#9824;", "&#9827;", "&#9829;", "&#9830;",]
   let numbers = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
 
@@ -42,18 +43,19 @@ document.getElementById('button').addEventListener('click', function () {
   let parent = document.getElementById('card-container');
   parent.appendChild(newCard);
 
+  let cardSize = parseInt(document.getElementById('card-scale').value) / 350
+  newCard.style.scale = cardSize
+
   if (newCardSuit == '&#9824;' || newCardSuit == '&#9827;') {
     newCard.classList.add('black');
   }
 })
 
-document.getElementById('change-size').addEventListener('click', function(){
+document.getElementById('change-size').addEventListener('click', function () {
 
-  let cardSize = parseInt(document.getElementById('card-scale').value) / 350
-  let cards = document.getElementsByClassName('card')
-  for(let i of cards){
-    i.style.scale = cardSize
-  }
-
-  console.log(cards)
+let cardSize = parseInt(document.getElementById('card-scale').value) / 350
+let cards = document.getElementsByClassName('card')
+for (let i of cards) {
+i.style.scale = cardSize
+}
 })
