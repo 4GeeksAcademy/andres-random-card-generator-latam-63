@@ -53,9 +53,10 @@ document.getElementById('button').addEventListener('click', function () {
 
 document.getElementById('change-size').addEventListener('click', function () {
 
-let cardSize = parseInt(document.getElementById('card-scale').value) / 350
-let cards = document.getElementsByClassName('card')
-for (let i of cards) {
-i.style.scale = cardSize
-}
+  let cardSize = parseInt(document.getElementById('card-scale').value) / 350
+  let cards = document.getElementsByClassName('card')
+  for (let i of cards) {
+    if (cardSize = null) { cardSize = 1 }
+    i.style.scale = cardSize
+  }
 })
