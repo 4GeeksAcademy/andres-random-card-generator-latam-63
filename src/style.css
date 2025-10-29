@@ -1,20 +1,19 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-1* {
-    border: 1px dotted red;
-}
-
 body {
     background: green;
 }
-.button{
+
+.button {
     margin-left: 47.5%;
-    margin-top: 20px ;
+    margin-top: 20px;
 }
+
 .card-size {
     margin-left: 41%;
-    margin-top:  5px;
+    margin-top: 5px;
 }
+
 .card-scale {
     text-align: end;
 }
@@ -39,7 +38,8 @@ body {
     color: red;
     scale: 1;
 }
-.black{
+
+.black {
     color: black;
 }
 

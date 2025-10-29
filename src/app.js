@@ -26,6 +26,7 @@ window.onload = function () {
     newCard.classList.add('black');
   }
 };
+
 document.getElementById('button').addEventListener('click', function () {
 
   let suits = ["&#9824;", "&#9827;", "&#9829;", "&#9830;",]
@@ -56,7 +57,6 @@ document.getElementById('change-size').addEventListener('click', function () {
   let cardSize = parseInt(document.getElementById('card-scale').value) / 350
   let cards = document.getElementsByClassName('card')
   for (let i of cards) {
-    if (cardSize = null) { cardSize = 1 }
     i.style.scale = cardSize
   }
 })
