@@ -44,16 +44,17 @@ document.getElementById('change-size').addEventListener('click', function () {
 });
 
 let counter = 4
-function timerCountdown(){
-  if(counter == 0 ){
+function timerCountdown() {
+  if (counter == 0) {
     counter = 5
     createNewcard()
   }
   document.getElementById('timer-display').innerHTML = counter--
- }
+}
 let cardInterval = setInterval(timerCountdown, 1000)
- 
+
 document.getElementById('stopTimer').addEventListener('click', function () {
-  clearInterval(cardInterval)});
+  clearInterval(cardInterval)
+});
 
 
